@@ -146,10 +146,6 @@ class BubbleListItem extends React.Component {
 		const { primaryText, direction } = this.props;
 		let content = (<span style={this.getStylesText()}>{primaryText}</span>);
 
-		if (['left', 'right'].indexOf(direction) >= 0) {
-			content = null;
-		}
-
 		return (
 			<span>
 				{this.renderAvatar('leftAvatar')}
